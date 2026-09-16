@@ -17,12 +17,11 @@ const ProdutosComponent = () => {
   return (
     <>
       <S.Produtos>
-        {/* 5. ALTERAÇÃO: Mapeia os produtos vindos da API do RTK Query */}
         {produtos?.map((produto) => (
           <Produto
             key={produto.id}
             produto={produto}
-            // Repare como não precisamos mais passar nenhuma função ou estado por aqui!
+            //
           />
         ))}
       </S.Produtos>
